@@ -16,6 +16,8 @@ WA.onInit().then(() => {
         1) 39\n
         2) 41\n
         3) 43`, []);
+
+        WA.player.state.foundItem1 = true
     })
     WA.room.area.onLeave('Q1').subscribe(closePopup)
 
@@ -25,6 +27,8 @@ WA.onInit().then(() => {
         2) Presque 1 000\n
         3) Quasiment 1300\n
         4) La moitié du soleil`, []);
+
+        WA.player.state.foundItem2 = true
     })
     WA.room.area.onLeave('Q2').subscribe(closePopup)
 
@@ -33,6 +37,8 @@ WA.onInit().then(() => {
         1) 2 millions\n
         2) 8 millions\n
         3) 13 millions`, []);
+
+        WA.player.state.foundItem3 = true
     })
     WA.room.area.onLeave('Q3').subscribe(closePopup)
 
@@ -41,6 +47,8 @@ WA.onInit().then(() => {
         1) IA Générative\n
         2) ESG\n
         3) Métavers`, []);
+
+        WA.player.state.foundItem4 = true
     })
     WA.room.area.onLeave('Q4').subscribe(closePopup)
 
@@ -49,8 +57,26 @@ WA.onInit().then(() => {
         1) 236\n
         2) 348\n
         3) 432`, []);
+
+        WA.player.state.foundItem5 = true
     })
     WA.room.area.onLeave('Q5').subscribe(closePopup)
+
+    WA.room.area.onEnter('Form').subscribe(() => {
+        if (WA.player.state.foundItem1 && WA.player.state.foundItem2 && WA.player.state.foundItem3 && WA.player.state.foundItem4 && WA.player.state.foundItem5) {
+            currentPopup = WA.ui.openPopup("Form_Popup", `Félicitation ${WA.player.name}, vous avez trouvé tous les objets cachés. Voyons maintenant si vous avez correctement répondu aux questions.`, [
+                {
+                    label: 'Valider mes réponses',
+                    className: 'primary',
+                    callback: () => WA.nav.openCoWebSite('https://workadventu.re/'),
+                }
+            ]);
+        } else {
+            currentPopup = WA.ui.openPopup("Form_Popup", `Salutation ${WA.player.name}, trouvez les 5 objets cachés dans le vaisseau, notez vos réponses, et revenez ici une fois cela fait afin de les valider !`, []);
+        }
+       
+    })
+    WA.room.area.onLeave('Form').subscribe(closePopup)
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
