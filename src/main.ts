@@ -16,7 +16,7 @@ WA.onInit().then(() => {
         1) 39
         2) 41
         3) 43
-        4) ?`, []);
+        4) 45`, []);
 
         WA.player.state.foundItem1 = true
     })
@@ -38,7 +38,7 @@ WA.onInit().then(() => {
         1) 2 millions
         2) 8 millions
         3) 13 millions
-        4) ? millions`, []);
+        4) 20 millions`, []);
 
         WA.player.state.foundItem3 = true
     })
@@ -60,7 +60,7 @@ WA.onInit().then(() => {
         1) 236
         2) 348
         3) 432
-        4) ?`, []);
+        4) 518`, []);
 
         WA.player.state.foundItem5 = true
     })

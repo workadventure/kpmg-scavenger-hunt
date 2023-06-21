@@ -429,7 +429,7 @@
                 {
                  "name":"openTab",
                  "type":"string",
-                 "value":"{{{ conferenceURL }}}"
+                 "value":"https:\/\/workadventu.re\/"
                 }, 
                 {
                  "name":"openWebsitePolicy",
@@ -3058,40 +3058,6 @@
                  "width":256,
                  "x":2048,
                  "y":3168
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":61,
-         "name":"configuration",
-         "objects":[
-                {
-                 "class":"variable",
-                 "height":0,
-                 "id":13,
-                 "name":"conferenceURL",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"default",
-                         "type":"string",
-                         "value":"https:\/\/workadventu.re\/"
-                        }, 
-                        {
-                         "name":"label",
-                         "type":"string",
-                         "value":"URL de l'auditorium"
-                        }],
-                 "rotation":0,
-                 "visible":true,
-                 "width":0,
-                 "x":1440,
-                 "y":3389.33333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
