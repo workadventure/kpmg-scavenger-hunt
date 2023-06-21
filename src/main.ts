@@ -13,10 +13,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q1').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q1_Popup", `Q1: Combien d'associés compte la BU Connected Tech ?\n
-        1) 39
-        2) 41
-        3) 43
-        4) 45`, []);
+        a) 39
+        b) 41
+        c) 43
+        d) 45`, []);
 
         WA.player.state.foundItem1 = true
     })
@@ -24,10 +24,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q2').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q2_Popup", `Q2: Combien de Terre, Jupiter pourrait-elle contenir ?\n
-        1) Environ 200 000
-        2) Presque 1 000
-        3) Quasiment 1300
-        4) La moitié du soleil`, []);
+        a) Environ 200 000
+        b) Presque 1 000
+        c) Quasiment 1300
+        d) La moitié du soleil`, []);
 
         WA.player.state.foundItem2 = true
     })
@@ -35,10 +35,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q3').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q3_Popup", `Q3: Combien de tickets seront mis en vente pour les Jeux de Paris 2024 ?\n
-        1) 2 millions
-        2) 8 millions
-        3) 13 millions
-        4) 20 millions`, []);
+        a) 2 millions
+        b) 8 millions
+        c) 13 millions
+        d) 20 millions`, []);
 
         WA.player.state.foundItem3 = true
     })
@@ -46,10 +46,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q4').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q4_Popup", `Q4: Sur quelle thématique KPMG et HEC Paris ont-il noués un partenariat académique ?\n
-        1) IA Générative
-        2) ESG
-        3) Optimisation des coûts IT
-        4) Métavers`, []);
+        a) IA Générative
+        b) ESG
+        c) Optimisation des coûts IT
+        d) Métavers`, []);
 
         WA.player.state.foundItem4 = true
     })
@@ -57,10 +57,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q5').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q5_Popup", `Q5: Combien de collaborateurs KPMG ont participé à la course Enfants sans cancer (Imagine for Margo) ?\n
-        1) 236
-        2) 348
-        3) 432
-        4) 518`, []);
+        a) 236
+        b) 348
+        c) 432
+        d) 518`, []);
 
         WA.player.state.foundItem5 = true
     })
