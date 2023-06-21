@@ -72,7 +72,7 @@ WA.onInit().then(() => {
                 {
                     label: 'Valider mes réponses',
                     className: 'primary',
-                    callback: () => WA.nav.openTab('https://app.klaxoon.com/participate/quiz/MUBSC4Q'),
+                    callback: () => WA.nav.openTab('https://app.klaxoon.com/join/R3ZMEHR'),
                 }
             ]);
         } else {
