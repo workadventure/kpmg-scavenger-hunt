@@ -16,7 +16,7 @@ class L{constructor(e){this.properties=e??[]}get(e){const t=this.properties.filt
         1) 39
         2) 41
         3) 43
-        4) ?`,[]),WA.player.state.foundItem1=!0}),WA.room.area.onLeave("Q1").subscribe(w),WA.room.area.onEnter("Q2").subscribe(()=>{b=WA.ui.openPopup("Q2_Popup",`Q2: Combien de Terre, Jupiter pourrait-elle contenir ?
+        4) 45`,[]),WA.player.state.foundItem1=!0}),WA.room.area.onLeave("Q1").subscribe(w),WA.room.area.onEnter("Q2").subscribe(()=>{b=WA.ui.openPopup("Q2_Popup",`Q2: Combien de Terre, Jupiter pourrait-elle contenir ?
 
         1) Environ 200 000
         2) Presque 1 000
@@ -26,7 +26,7 @@ class L{constructor(e){this.properties=e??[]}get(e){const t=this.properties.filt
         1) 2 millions
         2) 8 millions
         3) 13 millions
-        4) ? millions`,[]),WA.player.state.foundItem3=!0}),WA.room.area.onLeave("Q3").subscribe(w),WA.room.area.onEnter("Q4").subscribe(()=>{b=WA.ui.openPopup("Q4_Popup",`Q4: Sur quelle thématique KPMG et HEC Paris ont-il noués un partenariat académique ?
+        4) 20 millions`,[]),WA.player.state.foundItem3=!0}),WA.room.area.onLeave("Q3").subscribe(w),WA.room.area.onEnter("Q4").subscribe(()=>{b=WA.ui.openPopup("Q4_Popup",`Q4: Sur quelle thématique KPMG et HEC Paris ont-il noués un partenariat académique ?
 
         1) IA Générative
         2) ESG
@@ -36,4 +36,4 @@ class L{constructor(e){this.properties=e??[]}get(e){const t=this.properties.filt
         1) 236
         2) 348
         3) 432
-        4) ?`,[]),WA.player.state.foundItem5=!0}),WA.room.area.onLeave("Q5").subscribe(w),WA.room.area.onEnter("Form").subscribe(()=>{WA.player.state.foundItem1&&WA.player.state.foundItem2&&WA.player.state.foundItem3&&WA.player.state.foundItem4&&WA.player.state.foundItem5?b=WA.ui.openPopup("Form_Popup",`Félicitation ${WA.player.name}, vous avez trouvé tous les objets cachés. Voyons maintenant si vous avez correctement répondu aux questions.`,[{label:"Valider mes réponses",className:"primary",callback:()=>WA.nav.openTab("https://app.klaxoon.com/participate/quiz/MUBSC4Q")}]):b=WA.ui.openPopup("Form_Popup",`Salutation ${WA.player.name}, trouvez les 5 objets cachés dans le vaisseau, notez vos réponses, et revenez ici une fois cela fait afin de les valider !`,[])}),WA.room.area.onLeave("Form").subscribe(w),je().then(()=>{console.log("Scripting API Extra ready")}).catch(n=>console.error(n))}).catch(n=>console.error(n));function w(){b!==void 0&&(b.close(),b=void 0)}
+        4) 518`,[]),WA.player.state.foundItem5=!0}),WA.room.area.onLeave("Q5").subscribe(w),WA.room.area.onEnter("Form").subscribe(()=>{WA.player.state.foundItem1&&WA.player.state.foundItem2&&WA.player.state.foundItem3&&WA.player.state.foundItem4&&WA.player.state.foundItem5?b=WA.ui.openPopup("Form_Popup",`Félicitation ${WA.player.name}, vous avez trouvé tous les objets cachés. Voyons maintenant si vous avez correctement répondu aux questions.`,[{label:"Valider mes réponses",className:"primary",callback:()=>WA.nav.openTab("https://app.klaxoon.com/participate/quiz/MUBSC4Q")}]):b=WA.ui.openPopup("Form_Popup",`Salutation ${WA.player.name}, trouvez les 5 objets cachés dans le vaisseau, notez vos réponses, et revenez ici une fois cela fait afin de les valider !`,[])}),WA.room.area.onLeave("Form").subscribe(w),je().then(()=>{console.log("Scripting API Extra ready")}).catch(n=>console.error(n))}).catch(n=>console.error(n));function w(){b!==void 0&&(b.close(),b=void 0)}
