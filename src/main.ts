@@ -13,9 +13,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q1').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q1_Popup", `Q1: Combien d'associés compte la BU Connected Tech ?\n
-        1) 39\n
-        2) 41\n
-        3) 43`, []);
+        1) 39
+        2) 41
+        3) 43
+        4) ?`, []);
 
         WA.player.state.foundItem1 = true
     })
@@ -23,9 +24,9 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q2').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q2_Popup", `Q2: Combien de Terre, Jupiter pourrait-elle contenir ?\n
-        1) Environ 200 000\n
-        2) Presque 1 000\n
-        3) Quasiment 1300\n
+        1) Environ 200 000
+        2) Presque 1 000
+        3) Quasiment 1300
         4) La moitié du soleil`, []);
 
         WA.player.state.foundItem2 = true
@@ -34,9 +35,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q3').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q3_Popup", `Q3: Combien de tickets seront mis en vente pour les Jeux de Paris 2024 ?\n
-        1) 2 millions\n
-        2) 8 millions\n
-        3) 13 millions`, []);
+        1) 2 millions
+        2) 8 millions
+        3) 13 millions
+        4) ? millions`, []);
 
         WA.player.state.foundItem3 = true
     })
@@ -44,9 +46,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q4').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q4_Popup", `Q4: Sur quelle thématique KPMG et HEC Paris ont-il noués un partenariat académique ?\n
-        1) IA Générative\n
-        2) ESG\n
-        3) Métavers`, []);
+        1) IA Générative
+        2) ESG
+        3) Optimisation des coûts IT
+        4) Métavers`, []);
 
         WA.player.state.foundItem4 = true
     })
@@ -54,9 +57,10 @@ WA.onInit().then(() => {
 
     WA.room.area.onEnter('Q5').subscribe(() => {
         currentPopup = WA.ui.openPopup("Q5_Popup", `Q5: Combien de collaborateurs KPMG ont participé à la course Enfants sans cancer (Imagine for Margo) ?\n
-        1) 236\n
-        2) 348\n
-        3) 432`, []);
+        1) 236
+        2) 348
+        3) 432
+        4) ?`, []);
 
         WA.player.state.foundItem5 = true
     })
@@ -68,7 +72,7 @@ WA.onInit().then(() => {
                 {
                     label: 'Valider mes réponses',
                     className: 'primary',
-                    callback: () => WA.nav.openCoWebSite('https://workadventu.re/'),
+                    callback: () => WA.nav.openTab('https://app.klaxoon.com/participate/quiz/MUBSC4Q'),
                 }
             ]);
         } else {
