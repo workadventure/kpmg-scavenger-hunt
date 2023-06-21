@@ -72,7 +72,7 @@ WA.onInit().then(() => {
                 {
                     label: 'Valider mes réponses',
                     className: 'primary',
-                    callback: () => WA.nav.openTab('https://forms.office.com/Pages/ResponsePage.aspx?id=uyT_3okgAESMjvceaAN4sqSJN6FRu7JNuSaSmXU0btRUMDFDNTEyVjY3R0g4RTBLQlBRWTcwNVJXVS4u'),
+                    callback: () => WA.nav.openCoWebSite('https://forms.office.com/Pages/ResponsePage.aspx?id=uyT_3okgAESMjvceaAN4sqSJN6FRu7JNuSaSmXU0btRUMDFDNTEyVjY3R0g4RTBLQlBRWTcwNVJXVS4u'),
                 }
             ]);
         } else {
